@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---- metadata---->
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"><!---- this meta tag is for responsive web design. it allows the user to adjust the layout based on thr size of the viewport ---->
+    <title>Caribbean Spice</title>
+    <link rel="stylesheet" href="style.css"><!---- allows the html document to apply visual styles from the style.css file ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!---- connects google fonts API useing preconnect ---->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!---- helps loading the resorces from google fonts ---->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"><!---- imports poppins font into HTML document ---->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!---- loads the font awesome libary allowing the use of the icons ---->
+    <!-- 
+         shai resturant main web page
+         Filename: contact.html
+
+         Author:   Shai Rashada-Parasram
+         Date:     4/3/2024
+      -->
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png"></a><!--- when caribbean spice logo is clicked it will navigate the user to the homepage ---->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i><!--- this is a java scrip function. When user clicks on this icon it will hide the menu ---->
+                <ul>
+                    <li><a href="index.html">HOME</a></li><!--- when index.html is clicked it will navigate the user to the homepage ---->
+                    <li><a href="about.html">ABOUT</a></li><!--- when about.html is clicked it will navigate the user to the about page---->
+                    <li><a href="menu.html">MENU</a></li><!--- when menu.html is clicked it will navigate the user to the menu page---->
+                    <li><a href="reviews.html">REVIEWS</a></li><!--- when reviews.html is clicked it will navigate the user to the review page---->
+                    <li><a href="contact.html">CONTACT</a></li><!--- when contact.html is clicked it will navigate the user to the contact page---->
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i><!--- this is a java scrip function. When user clicks on this icon it will show the menu ---->
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!--- contact us content ---->
+
+<section class="location">
+    <!--- google maps of the restaurant location ---->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.886764731141!2d-71.0981510238644!3d42.3662524347103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370ad19a1ee95%3A0x64d27bce26ae540a!2s169%20Harvard%20St%2C%20Cambridge%2C%20MA%2002139!5e0!3m2!1sen!2sus!4v1712461761115!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i> <!--- icon of a house---->
+                <span>
+                    <h5>169 Harvard St</h5>
+                    <p>Cambridge, Massachusetts, USA</p>
+                </span>
+            </div>
+        <div>
+            <i class="fa fa-phone"></i><!--- icon of a phone---->
+                <span>
+                    <h5>617-528-8527</h5>
+                    <p>Open Monday to Saturday, 12PM to 12AM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i> <!--- icon of a envelope ---->
+                <span>
+                    <h5>spice@carribbeanspice.com</h5>
+                    <p>Email Us</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <!---form action will process the contents of the form when submitted.--->
+            <form action="form-handler" method="post"> 
+                <input type="text" name="name" placeholder="Enter your name" required> <!---The "input type" element alows users to input data to the form --->
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="phone" name="phone" placeholder="Enter your number" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea> 
+                <button type="submit" class="hero-btn green-btn">Send Message</button> <!---the "button type" element alows the information on the form to be sumbitted.--->
+            </form>
+            <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=wbcyaaql&n=n1.ratufa.io"></script> 
+            <!--The embedded code from ratufa will send users recorded data to the website ratufa.io -->
+
+        </div>
+    </div>
+
+</section>
+
+<!--- Footer ---->
+
+
+<section class="footer">
+    <h4>Open Mon-Sat: 12pm-12am</h4>
+    <p>Welcome to Caribbean Spice, where culinary mastery meets seaside charm.<br>Indulge in exquisite flavors crafted with passion and precision.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><!--- when the facebook icon is clicked it will navigate the user to facebook.com ---->
+        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><!--- when the twitter icon is clicked it will navigate the user to twitter.com ---->
+        <a href="https://www.instagram.com/caribbean_spice240/"><i class="fa fa-instagram"></i></a><!--- when the instagram icon is clicked it will navigate the user to instagram.com ---->
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a><!--- when the linkedin icon is clicked it will navigate the user to linkedin.com ---->
+    </div>
+    <p>Made By <i class="fa fa-hand-peace-o"></i> Shai Rashada-Parasram </p><!--- made by display a peace sign icon shai rashada-parasram---->
+</section>
+
+
+
+
+
+
+
+<!--Some JavaScript to open and close menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+    
+</script>
+
+</body>
+</html>

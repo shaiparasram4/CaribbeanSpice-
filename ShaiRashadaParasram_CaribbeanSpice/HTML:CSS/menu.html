@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---- metadata---->
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"><!---- this meta tag is for responsive web design. it allows the user to adjust the layout based on thr size of the viewport ---->
+    <title>Caribbean Spice</title>
+    <link rel="stylesheet" href="style.css"><!---- allows the html document to apply visual styles from the style.css file ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!---- connects google fonts API useing preconnect ---->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!---- helps loading the resorces from google fonts ---->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"><!---- imports poppins font into HTML document ---->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!---- loads the font awesome libary allowing the use of the icons ---->
+    <!-- 
+         shai resturant main web page
+         Filename: menu.html
+
+         Author:   Shai Rashada-Parasram
+         Date:     3/20/2024
+      -->
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png"></a><!--- when caribbean spice logo is clicked it will navigate the user to the homepage ---->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i><!--- this is a java scrip function. When user clicks on this icon it will hide the menu ---->
+                <ul>
+                    <li><a href="index.html">HOME</a></li><!--- when index.html is clicked it will navigate the user to the homepage ---->
+                    <li><a href="about.html">ABOUT</a></li><!--- when about.html is clicked it will navigate the user to the about page---->
+                    <li><a href="menu.html">MENU</a></li><!--- when menu.html is clicked it will navigate the user to the menu page---->
+                    <li><a href="reviews.html">REVIEWS</a></li><!--- when reviews.html is clicked it will navigate the user to the review page---->
+                    <li><a href="contact.html">CONTACT</a></li><!--- when contact.html is clicked it will navigate the user to the contact page---->
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i><!--- this is a java scrip function. When user clicks on this icon it will hide the menu ---->
+        </nav>
+        <h1>Our Menu</h1>
+    </section>
+
+<!--- Menu ---->
+<section class="food">
+    <h1>Today's Specials</h1>
+    <p>Savor the irresistible blend of spices and flavors in today's specials at Caribbean Spice. From the fiery Jerk Chicken to the comforting Callaloo and Saltfish, each dish offers a taste of authentic caribbean cuisine that's simply irresistible.</p>
+
+    <div class="row">
+        <div class="food-col">
+            <h3>Jerk Chicken with Plantain Mash</h3>
+            <p>Succulent jerk chicken served with creamy plantain mash infused with island spices.</p>
+        </div>
+        <div class="food-col">
+            <h3>Callaloo and Saltfish</h3>
+            <p>A hearty stew of callaloo greens and salted cod simmered with tomatoes, onions, and peppers.</p>
+        </div>
+        <div class="food-col">
+            <h3>Coconut Curry Shrimp </h3>
+            <p>Plump shrimp cooked in a fragrant coconut curry sauce, with hints of ginger, garlic, and scotch bonnet pepper.</p>
+        </div>
+    </div>
+
+</section>
+
+<!--- Food we offer - (1.Appatizers, 2.Drinks, 3.Main Dishes)---->
+
+<section class="dishes">
+    <h1>New Dishes & Full Menu</h1>
+    <p>Caribbean dishes bursting with bold flavors and tropical delights.</p>
+
+    <div class="row">
+        <div class="dishes-col">
+            <img src="images/raspasta.jpeg">
+            <h3>Our New Rasta Pasta!</h3>
+            <p>Try our new rasta pasta. Creamy spicy delight wth jerk seasoned chicken and peppers.</p>
+        </div>
+        <div class="dishes-col">
+            <img src="images/mangosmooth.jpeg">
+            <h3>Try Our Mango smoothie!</h3>
+            <p>Refreshing blend of mango, yogurt and a hint of honey.</p>
+        </div>
+        <div class="dishes-col">
+            <img src="images/salad.jpeg">
+            <h3>Introduceing Our New carribbean salad!</h3>
+            <p>Caribbean Spice signature salad, fresh greens, tropical fruits, with a tangy burst of flavor.</p>
+        </div>
+    </div> 
+
+    <div class="dishes-col">
+        <img src="images/Untitled.png">
+    </div>
+</section>
+
+
+
+<!--- Footer ---->
+
+
+<section class="footer">
+    <h4>Open Mon-Sat: 12pm-12am</h4>
+    <p>Welcome to Caribbean Spice, where culinary mastery meets seaside charm.<br>Indulge in exquisite flavors crafted with passion and precision.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><!--- when the facebook icon is clicked it will navigate the user to facebook.com ---->
+        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><!--- when the twitter icon is clicked it will navigate the user to twitter.com ---->
+        <a href="https://www.instagram.com/caribbean_spice240/"><i class="fa fa-instagram"></i></a><!--- when the instagram icon is clicked it will navigate the user to instagram.com ---->
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a><!--- when the linkedin icon is clicked it will navigate the user to linkedin.com ---->
+    </div>
+    </div>
+    <p>Made By <i class="fa fa-hand-peace-o"></i> Shai Rashada-Parasram </p> <!--- made by display a peace sign icon shai rashada-parasram---->
+</section>
+
+
+
+
+
+
+
+<!--Some JavaScript to open and close menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+    
+</script>
+
+</body>
+</html>

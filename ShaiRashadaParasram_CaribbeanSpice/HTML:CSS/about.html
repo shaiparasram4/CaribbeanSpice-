@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---- metadata---->
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"> <!---- this meta tag is for responsive web design. it allows the user to adjust the layout based on thr size of the viewport ---->
+    <title>Caribbean Spice</title>
+    <link rel="stylesheet" href="style.css"><!---- allows the html document to apply visual styles from the style.css file ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!---- connects google fonts API useing preconnect ---->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!---- helps loading the resorces from google fonts ---->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"><!---- imports poppins font into HTML document ---->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!---- loads the font awesome libary allowing the use of the icons ---->
+    <!-- 
+         shai resturant main web page
+         Filename: about.html
+
+         Author:   Shai Rashada-Parasram
+         Date:     2/28/2024
+      -->
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png"></a><!--- when caribbean spice logo is clicked it will navigate the user to the homepage ---->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!--- this is a java scrip function. When user clicks on this icon it will hide the menu ---->
+                <ul>
+                    <li><a href="index.html">HOME</a></li><!--- when index.html is clicked it will navigate the user to the homepage ---->
+                    <li><a href="about.html">ABOUT</a></li><!--- when about.html is clicked it will navigate the user to the about page---->
+                    <li><a href="menu.html">MENU</a></li><!--- when menu.html is clicked it will navigate the user to the menu page---->
+                    <li><a href="reviews.html">REVIEWS</a></li><!--- when reviews.html is clicked it will navigate the user to the review page---->
+                    <li><a href="contact.html">CONTACT</a></li><!--- when contact.html is clicked it will navigate the user to the contact page---->
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>  <!--- this is a javascrip function. When user clicks on this icon it will show the menu ---->
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!--- about us content ---->
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>We have the worlds best caribbean food</h1>
+            <p>Caribbean Spice was born out of the love for the caribbean islands, established in 2010 
+                our journey began with bring the food and vibes of the caribbean to massachusetts. we bring the vibrant flavors of the caribbean to your plate. With a menu inspired by the rich
+              culinary traditions of the islands, we promise an authentic dining experience bursting with spice and zest. 
+              From jerk chicken to savory seafood dishes and irresistible plantain treats, every bite is a journey
+              to the sun-kissed shores of the caribbean. Watch the video below and see one of our chief's in action. Click "Explore Now" to view our full menu. </p>
+              <a href="menu.html" class="hero-btn green-btn">EXPLORE NOW</a><!--- when the hero-btn is clicked it will navigate the user to the menu page ---->
+        </div>
+        <div class="about-col">
+            <img src="images/ABOUT.jpg">
+            <!--- below this note is embed code allows the youtube video to play on my website ---->
+            <iframe width="555" height="330" src="https://www.youtube.com/embed/Tcn__Rsf_Ic?si=XrRx0HNNy872Wqt7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<!--- Footer ---->
+
+
+<section class="footer">
+    <h4>Open Mon-Sat: 12pm-12am</h4>
+    <p>Welcome to Caribbean Spice, where culinary mastery meets seaside charm.<br>Indulge in exquisite flavors crafted with passion and precision.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><!--- when the facebook icon is clicked it will navigate the user to facebook.com ---->
+        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><!--- when the twitter icon is clicked it will navigate the user to twitter.com ---->
+        <a href="https://www.instagram.com/caribbean_spice240/"><i class="fa fa-instagram"></i></a><!--- when the instagram icon is clicked it will navigate the user to instagram.com ---->
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a><!--- when the linkedin icon is clicked it will navigate the user to linkedin.com ---->
+    </div>
+    </div>
+    <p>Made By <i class="fa fa-hand-peace-o"></i> Shai Rashada-Parasram </p> <!--- made by display a peace sign icon shai rashada-parasram---->
+</section>
+
+
+
+
+
+
+
+<!--Some JavaScript to open and close menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+    
+</script>
+
+</body>
+</html>

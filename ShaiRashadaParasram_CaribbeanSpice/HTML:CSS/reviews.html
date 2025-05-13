@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---- metadata---->
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"><!---- this meta tag is for responsive web design. it allows the user to adjust the layout based on thr size of the viewport ---->
+    <title>Caribbean Spice</title>
+    <link rel="stylesheet" href="style.css"><!---- allows the html document to apply visual styles from the style.css file ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!---- connects google fonts API useing preconnect ---->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!---- helps loading the resorces from google fonts ---->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"><!---- imports poppins font into HTML document ---->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!---- loads the font awesome libary allowing the use of the icons ---->
+    <!-- 
+         shai resturant main web page
+         Filename: reviews.html
+
+         Author:   Shai Rashada-Parasram
+         Date:     3/28/2024
+      -->
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png"></a><!--- when caribbean spice logo is clicked it will navigate the user to the homepage ---->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i><!--- this is a java scrip function. When user clicks on this icon it will hide the menu ---->
+                <ul>
+                    <li><a href="index.html">HOME</a></li><!--- when index.html is clicked it will navigate the user to the homepage ---->
+                    <li><a href="about.html">ABOUT</a></li><!--- when about.html is clicked it will navigate the user to the about page---->
+                    <li><a href="menu.html">MENU</a></li><!--- when menu.html is clicked it will navigate the user to the menu page---->
+                    <li><a href="reviews.html">REVIEWS</a></li><!--- when reviews.html is clicked it will navigate the user to the review page---->
+                    <li><a href="contact.html">CONTACT</a></li><!--- when contact.html is clicked it will navigate the user to the contact page---->
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i><!--- this is a java scrip function. When user clicks on this icon it will hide the menu ---->
+        </nav>
+        <h1>REVIEWS</h1>
+    </section>
+
+<!--- review page content---->
+<section class="review-content">
+    
+    <div class="row">
+        <div class="review-left">
+            <img src="images/review.jpg">
+            <h2>Our reviews for 2024</h2>
+            <p>"Caribbean Spice is a culinary gem offering a flavorful journey through the Caribbean. 
+             With vibrant dishes like Jerk Chicken and Coconut Curry Shrimp, the restaurant delivers an authentic taste experience that's both exotic and unforgettable. 
+             A must-visit destination for food enthusiasts!" - Jane Smith</p>
+            <br>
+            <p>"Caribbean Spice, where every bite is a passport to paradise! 
+                Phantom Gourmet is delighted to award this culinary gem with our highest praise. From the moment you step through the door, 
+                you're enveloped in a symphony of tantalizing aromas and vibrant colors that transport you to the sun-soaked shores of the Caribbean.
+                The menu celebrates island flavors, featuring signature dishes like the fiery Jerk Chicken, the soul-warming Callaloo and Saltfish, and the luxurious Coconut Curry Shrimp. 
+                Each bite is a harmonious blend of spices and seasonings, expertly crafted to tantalize your taste buds and leave you craving more.
+                But Caribbean Spice's accolades are not just due to its food. 
+                The service is impeccable, with a warm and welcoming staff passionate about sharing their love for Caribbean cuisine with every guest." - Phantom Gourmet</p>
+            <br>
+            <p>"Welcome to Flavortown, where Caribbean Spice serves up island vibes and killer grub! Let me tell you, 
+                their Jerk Chicken is the real deal—tender, juicy, and packed with flavor that'll knock your socks off!
+                Wash it down with one of their refreshing tropical drinks, like the Coconut Punch, and you'll be in paradise. 
+                And don't even get me started on the Macaroni and Cheese. It's creamy, cheesy, and downright addictive.
+                From the first bite to the last sip, Caribbean Spice is a flavor explosion that'll have you returning for more every time, my friends!" - Guy Fieri</p>
+            <br>
+            <p>"At Caribbean Spice, the flavors are as bold as the beats of a steel drum band!
+                The Jerk Chicken is the star spiced to perfection, with an irresistible kick that keeps you returning for more.
+                Pair it with their irresistible side dishes like the creamy Macaroni and Cheese or the zesty Fried Plantains for a taste sensation that transports you to the islands.
+                Wash it all down with one of their expertly crafted drinks, like the coconut Punch or the frozen Mango smoothie, 
+                and you've got yourself a meal fit for a Caribbean king. Take advantage of this culinary journey, folks!" - Adam Richman </p>
+
+                <!--- comment box--->
+                <div class="comment-box">
+
+                    <h3>Leave A Review</h3>
+                    <!--- this allows users to write a review about the restaurant---->
+                    <form class="comment-form" method="post">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn green-btn">POST COMMENT</button>
+                    </form>
+                    
+                </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="review-right">
+            <!--- discription of reviewers favorite dishes---->
+            <h3>Reviewers Favorite Dishes</h3>
+            <div>
+                <span>Jane Smith</span>
+                <span>Jerk Chicken</span>
+            </div>
+            <div>
+                <span>Phantom Gourmet</span>
+                <span>Coconut Shrimp</span>
+            </div>
+            <div>
+                <span>Guy Fieri</span>
+                <span>Jerk Chicken</span>
+            </div>
+            <div>
+                <span>Adam Richman</span>
+                <span>Fried Plantains</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!--- Footer ---->
+
+
+<section class="footer">
+    <h4>Open Mon-Sat: 12pm-12am</h4>
+    <p>Welcome to Caribbean Spice, where culinary mastery meets seaside charm.<br>Indulge in exquisite flavors crafted with passion and precision.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><!--- when the facebook icon is clicked it will navigate the user to facebook.com ---->
+        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><!--- when the twitter icon is clicked it will navigate the user to twitter.com ---->
+        <a href="https://www.instagram.com/caribbean_spice240/"><i class="fa fa-instagram"></i></a><!--- when the instagram icon is clicked it will navigate the user to instagram.com ---->
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a><!--- when the linkedin icon is clicked it will navigate the user to linkedin.com ---->
+    </div>
+    <p>Made By <i class="fa fa-hand-peace-o"></i> Shai Rashada-Parasram </p> <!--- made by display a peace sign icon shai rashada-parasram---->
+</section>
+
+
+
+
+
+
+
+<!--Some JavaScript to open and close menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+    
+</script>
+
+</body>
+</html>

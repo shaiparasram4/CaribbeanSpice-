@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---- metadata---->
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"> <!---- this meta tag is for responsive web design. it allows the user to adjust the layout based on thr size of the viewport ---->
+    <title>Caribbean Spice</title>
+    <link rel="stylesheet" href="style.css"><!---- allows the html document to apply visual styles from the style.css file ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!---- connects google fonts API useing preconnect ---->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!---- helps loading the resorces from google fonts ---->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"><!---- imports poppins font into HTML document ---->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!---- loads the font awesome libary allowing the use of the icons ---->
+    <!-- 
+         shai resturant main web page
+         Filename: index.html
+
+         Author:   Shai Rashada-Parasram
+         Date:     5/17/2024
+      -->
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png"></a><!--- when caribbean spice logo is clicked it will navigate the user to the homepage ---->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i><!--- this is a java scrip function. When user clicks on this icon it will hide the menu ---->
+                <ul>
+                    <li><a href="index.html">HOME</a></li><!--- when index.html is clicked it will navigate the user to the homepage ---->
+                    <li><a href="about.html">ABOUT</a></li><!--- when about.html is clicked it will navigate the user to the about page---->
+                    <li><a href="menu.html">MENU</a></li><!--- when menu.html is clicked it will navigate the user to the menu page---->
+                    <li><a href="reviews.html">REVIEWS</a></li><!--- when reviews.html is clicked it will navigate the user to the review page---->
+                    <li><a href="contact.html">CONTACT</a></li><!--- when contact.html is clicked it will navigate the user to the contact page---->
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i><!--- this is a javascrip function. When user clicks on this icon it will show the menu ---->
+        </nav>
+
+<div class="text-box">
+    <h1>World Renowned Caribbean Food</h1>
+    <p>Welcome to Caribbean Spice, where every dish tells a story of vibrant flavors and island charm.<br>Join us for a culinary journey like no other!</p>
+    <a href="about.html" class="hero-btn">Know More About Us</a><!--- when the hero-btn is clicked it will navigate the user to the about page ---->
+</div>
+    </section>
+
+<!--- Food ---->
+
+<section class="food">
+    <h1>What We Offer</h1>
+    <p>Explore our diverse menu featuring dishes inspired by the rich culinary traditions of the Caribbean.</p>
+
+    <div class="row">
+        <div class="food-col">
+            <h3>Tantalizing Dishes</h3>
+            <p>Our caribbean food is a fusion of bold spices, fresh ingredients, and diverse influences, creating a explosion of flavors that tantalize your taste buds and ignite the senses.</p>
+        </div>
+        <div class="food-col">
+            <h3>Bold Drinks</h3>
+            <p>Our drinks captivate with their refreshing blend of tropical fruits and exotic flavors, offering a delightful taste of paradise in every sip.</p>
+        </div>
+        <div class="food-col">
+            <h3>Warm Atmosphere</h3>
+            <p>Step into our caribbean oasis, where vibrant hues, tropical motifs, and cozy ambiance invite you to relax and savor the spirit of the islands.</p>
+        </div>
+    </div>
+
+</section>
+<!---- Resturant ---->
+
+<section class="resturant">
+    <h1>Our Restaurant Locations</h1>
+    <p>Immerse yourself in our Caribbean inspired haven, where every detail enchants.</p>
+
+    <div class="row">
+        <div class="resturant-col">
+            <img src="images/BOSTON.png">
+            <div class="layer">
+                <h3>BOSTON</h3>
+            </div>
+        </div> 
+        <div class="resturant-col">
+            <img src="images/NEW YORK.png">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>  
+        <div class="resturant-col">
+            <img src="images/MIAMI.png">
+            <div class="layer">
+                <h3>MIAMI</h3>
+            </div>
+        </div>         
+    </div>
+
+
+</section>
+
+<!--- Featured Dishes & Drinks --->
+<section class="dishes">
+    <h1>Our Featured dishes</h1>
+    <p>Our caribbean food is a fusion of bold spices and fresh ingredients.</p>
+
+    <div class="row">
+        <div class="dishes-col">
+            <img src="images/chic.jpg">
+            <h3>World Famous Jerk Chicken</h3>
+            <p>Try our Jerk Chicken, a tantalizing blend of spices and flavors that will ignite your taste buds.</p>
+        </div>
+        <div class="dishes-col">
+            <img src="images/blue.jpg">
+            <h3>Try Our Blue Lagoon drink!</h3>
+            <p>Refreshing, exotic cocktails at Caribbean Spice, Try our Blue Lagoon.</p>
+        </div>
+        <div class="dishes-col">
+            <img src="images/mac.jpg">
+            <h3>Try Our New Smoked Mac And Cheese!</h3>
+            <p> smoky and creamy delight: Caribbean Spice signature mac enchants palates.</p>
+        </div>
+    </div> 
+
+
+</section>
+
+<!-- Meet Our Chef's -->
+
+<section class="chef">
+    <h1>Meet Our Chef's</h1>
+    <p>Caribbean Spice culinary maestros craft magic with every dish.</p>
+
+    <div class="row">
+        <div class="chef-col">
+            <img src="images/rosesmith.jpg">
+            <div>
+                <p>Chef Rose Smith: Talented, dedicated, culinary wizard at Caribbean Spice.</p>
+                <h3>Rose Smith</h3>
+                <!--- icons of stars and half stars ---->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="chef-col">
+            <img src="images/jadenlee.jpg">
+            <div>
+                <p>Chef Jaden Lee: Passionate, innovative, culinary virtuoso at Caribbean Spice.</p>
+                <h3>Jaden Lee</h3>
+                <!--- icons of stars and half stars ---->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!---Contact Us Anytime ---->
+
+<section class="cua">
+    <h1>Please Contact Us<br>For Any Questions About Your Reservation</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a><!--- when the hero-btn is clicked it will navigate the user to the contact page ---->
+</section>
+
+<!--- Footer ---->
+
+<section class="footer">
+    <h4>Open Mon-Sat: 12pm-12am</h4>
+    <p>Welcome to Caribbean Spice, where culinary mastery meets seaside charm.<br>Indulge in exquisite flavors crafted with passion and precision.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><!--- when the facebook icon is clicked it will navigate the user to facebook.com ---->
+        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><!--- when the twitter icon is clicked it will navigate the user to twitter.com ---->
+        <a href="https://www.instagram.com/caribbean_spice240/"><i class="fa fa-instagram"></i></a><!--- when the instagram icon is clicked it will navigate the user to instagram.com ---->
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a><!--- when the linkedin icon is clicked it will navigate the user to linkedin.com ---->
+    </div>
+    <p>Made By <i class="fa fa-hand-peace-o"></i> Shai Rashada-Parasram </p> <!--- made by display a peace sign icon shai rashada-parasram---->
+</section>
+
+
+
+
+
+
+
+<!--Some JavaScript to open and close menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+    
+</script>
+
+</body>
+</html>
+
